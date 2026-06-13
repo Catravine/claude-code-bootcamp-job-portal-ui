@@ -200,11 +200,11 @@ const JobApplicants = () => {
   const getStatusColor = (status) => {
     switch (status) {
       case 'Applied':
-        return 'bg-blue-100 text-blue-800 border-blue-200';
+        return 'bg-green-100 text-green-800 border-green-200';
       case 'In Review':
         return 'bg-yellow-100 text-yellow-800 border-yellow-200';
       case 'Interview':
-        return 'bg-purple-100 text-purple-800 border-purple-200';
+        return 'bg-red-100 text-red-800 border-red-200';
       case 'Rejected':
         return 'bg-red-100 text-red-800 border-red-200';
       case 'Hired':
@@ -286,8 +286,8 @@ const JobApplicants = () => {
       <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-gray-50 via-white to-primary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-12 relative">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-purple-200/30 to-primary-200/30 dark:from-purple-900/20 dark:to-primary-900/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-tl from-blue-200/30 to-purple-200/30 dark:from-blue-900/20 dark:to-purple-900/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-red-200/30 to-primary-200/30 dark:from-red-900/20 dark:to-primary-900/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-tl from-green-200/30 to-red-200/30 dark:from-green-900/20 dark:to-red-900/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -299,7 +299,7 @@ const JobApplicants = () => {
             </svg>
             Back to My Jobs
           </Link>
-          <h1 className="text-4xl font-black bg-gradient-to-r from-primary-600 via-purple-600 to-primary-800 dark:from-primary-400 dark:via-purple-400 dark:to-primary-300 bg-clip-text text-transparent mb-2">
+          <h1 className="text-4xl font-black bg-gradient-to-r from-primary-600 via-red-600 to-primary-800 dark:from-primary-400 dark:via-red-400 dark:to-primary-300 bg-clip-text text-transparent mb-2">
             Job Applicants
           </h1>
           <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -404,7 +404,7 @@ const JobApplicants = () => {
                   <div className="flex-1">
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-purple-600 dark:from-primary-500 dark:to-purple-500 rounded-full flex items-center justify-center">
+                        <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-red-600 dark:from-primary-500 dark:to-red-500 rounded-full flex items-center justify-center">
                           <span className="text-white font-bold text-lg">
                             {application.applicant.name.charAt(0).toUpperCase()}
                           </span>
@@ -487,7 +487,7 @@ const JobApplicants = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-600 to-purple-600 dark:from-primary-500 dark:to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary-600 to-red-600 dark:from-primary-500 dark:to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-2xl">
                     {selectedApplicant.name.charAt(0).toUpperCase()}
                   </span>
@@ -574,7 +574,7 @@ const JobApplicants = () => {
                       }}
                     />
                   ) : null}
-                  <div className={`w-full h-full bg-gradient-to-br from-primary-600 to-purple-600 dark:from-primary-500 dark:to-purple-500 flex items-center justify-center ${selectedApplicant.profileImage ? 'hidden' : ''}`}>
+                  <div className={`w-full h-full bg-gradient-to-br from-primary-600 to-red-600 dark:from-primary-500 dark:to-red-500 flex items-center justify-center ${selectedApplicant.profileImage ? 'hidden' : ''}`}>
                     <span className="text-white font-bold text-3xl">
                       {selectedApplicant.name?.charAt(0).toUpperCase()}
                     </span>
@@ -679,9 +679,9 @@ const JobApplicants = () => {
                             <div className="text-sm text-gray-400 dark:text-gray-500">Candidate has not provided a resume yet</div>
                           </div>
                         </div>
-                        <div className="text-sm text-gray-400 bg-blue-50 dark:bg-blue-900/20 px-3 py-2 rounded-lg">
-                          <div className="font-medium text-blue-800 dark:text-blue-300 mb-1">💡 To test resume viewing:</div>
-                          <div className="text-blue-700 dark:text-blue-400">
+                        <div className="text-sm text-gray-400 bg-green-50 dark:bg-green-900/20 px-3 py-2 rounded-lg">
+                          <div className="font-medium text-green-800 dark:text-green-300 mb-1">💡 To test resume viewing:</div>
+                          <div className="text-green-700 dark:text-green-400">
                             The test user "Alex Brown" has a sample PDF resume.<br/>
                             1. Apply for a job as Alex Brown<br/>
                             2. Login as employer to see the resume<br/>

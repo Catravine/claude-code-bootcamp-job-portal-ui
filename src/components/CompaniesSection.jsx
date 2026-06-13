@@ -15,33 +15,33 @@ const CompaniesSection = () => {
   // Add gradient colors based on industry
   const getGradient = (industry) => {
     switch (industry) {
-      case 'Technology': return 'from-blue-500 to-purple-500'
+      case 'Technology': return 'from-green-500 to-red-500'
       case 'E-commerce': return 'from-orange-500 to-yellow-500'
       case 'Automotive': return 'from-red-600 to-red-800'
       case 'Entertainment': return 'from-red-600 to-pink-600'
       case 'Music': return 'from-green-500 to-green-600'
       case 'Travel': return 'from-pink-500 to-rose-500'
-      case 'Fintech': return 'from-purple-500 to-indigo-500'
+      case 'Fintech': return 'from-red-500 to-red-500'
       case 'Cryptocurrency': return 'from-yellow-500 to-orange-500'
       default: return 'from-gray-500 to-gray-600'
     }
   }
 
   return (
-    <section className="relative py-24 bg-gradient-to-br from-white via-primary-50/30 to-purple-50/30 dark:from-gray-800 dark:via-gray-900 dark:to-purple-950/20 overflow-hidden">
+    <section className="relative py-24 bg-gradient-to-br from-white via-primary-50/30 to-red-50/30 dark:from-gray-800 dark:via-gray-900 dark:to-red-950/20 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-0 w-72 h-72 bg-gradient-to-br from-primary-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-gradient-to-tr from-blue-400/15 to-purple-400/15 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-72 h-72 bg-gradient-to-br from-primary-400/20 to-red-400/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-gradient-to-tr from-green-400/15 to-red-400/15 rounded-full blur-3xl"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-700 dark:text-primary-300 text-sm font-semibold mb-6 backdrop-blur-sm border border-primary-200/50 dark:border-primary-700/50">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-red-100 dark:from-primary-900/30 dark:to-red-900/30 text-primary-700 dark:text-primary-300 text-sm font-semibold mb-6 backdrop-blur-sm border border-primary-200/50 dark:border-primary-700/50">
             🏢 Industry Leaders
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-gray-900 dark:text-white mb-6">
-            <span className="bg-gradient-to-r from-gray-900 via-primary-600 to-purple-600 dark:from-white dark:via-primary-400 dark:to-purple-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gray-900 via-primary-600 to-red-600 dark:from-white dark:via-primary-400 dark:to-red-400 bg-clip-text text-transparent">
               Top Companies Hiring
             </span>
           </h2>
@@ -85,7 +85,7 @@ const CompaniesSection = () => {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:bg-gradient-to-r group-hover:from-primary-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:bg-gradient-to-r group-hover:from-primary-600 group-hover:to-red-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                   {company.name}
                 </h3>
 
@@ -96,7 +96,7 @@ const CompaniesSection = () => {
                 )}
 
                 <div className="text-gray-600 dark:text-gray-400 mb-4 font-semibold">
-                  <span className="text-2xl font-black bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">{company.jobCount}</span>
+                  <span className="text-2xl font-black bg-gradient-to-r from-primary-600 to-red-600 bg-clip-text text-transparent">{company.jobCount}</span>
                   <div className="text-sm">open positions</div>
                 </div>
                 
@@ -134,7 +134,7 @@ const CompaniesSection = () => {
         <div className="text-center mt-16">
           <Link 
             to="/companies"
-            className="relative group overflow-hidden bg-gradient-to-r from-primary-600 via-purple-600 to-blue-600 hover:from-primary-700 hover:via-purple-700 hover:to-blue-700 text-white px-12 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-primary-500/25 inline-block"
+            className="relative group overflow-hidden bg-gradient-to-r from-primary-600 via-red-600 to-green-600 hover:from-primary-700 hover:via-red-700 hover:to-green-700 text-white px-12 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-primary-500/25 inline-block"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <span className="relative z-10 flex items-center justify-center">

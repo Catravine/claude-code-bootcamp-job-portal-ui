@@ -126,8 +126,8 @@ const Register = () => {
     <div className={`min-h-[calc(100vh-5rem)] ${theme === 'dark' ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' : 'bg-gradient-to-br from-gray-50 via-white to-primary-50'} flex items-center justify-center px-4 py-12 relative`}>
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-purple-200/30 to-primary-200/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-tl from-blue-200/30 to-purple-200/30 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-red-200/30 to-primary-200/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-tl from-green-200/30 to-red-200/30 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 w-full max-w-md">
@@ -135,7 +135,7 @@ const Register = () => {
           {/* Header */}
           <div className="text-center mb-8">
             <div className="relative mb-4">
-              <h1 className="text-4xl font-black bg-gradient-to-r from-primary-600 via-purple-600 to-primary-800 bg-clip-text text-transparent">
+              <h1 className="text-4xl font-black bg-gradient-to-r from-primary-600 via-red-600 to-primary-800 bg-clip-text text-transparent">
                 Join JobPortal
               </h1>
             </div>
@@ -263,7 +263,7 @@ const Register = () => {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold py-3 px-4 rounded-xl hover:from-primary-700 hover:to-purple-700 focus:ring-4 focus:ring-primary-300 transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="w-full bg-gradient-to-r from-primary-600 to-red-600 text-white font-semibold py-3 px-4 rounded-xl hover:from-primary-700 hover:to-red-700 focus:ring-4 focus:ring-primary-300 transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {isLoading ? (
                 <div className="flex items-center justify-center space-x-2">

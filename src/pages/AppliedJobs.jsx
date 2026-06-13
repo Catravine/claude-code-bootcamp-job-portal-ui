@@ -54,15 +54,15 @@ const AppliedJobs = () => {
     switch (status?.toUpperCase()) {
       case 'PENDING':
       case 'APPLIED':
-        return 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300';
+        return 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300';
       case 'REVIEWED':
       case 'IN REVIEW':
         return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300';
       case 'SHORTLISTED':
-        return 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-300';
+        return 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300';
       case 'INTERVIEWED':
       case 'INTERVIEW':
-        return 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300';
+        return 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300';
       case 'OFFERED':
       case 'HIRED':
         return 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300';
@@ -109,8 +109,8 @@ const AppliedJobs = () => {
     <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-gray-50 via-white to-primary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-12 relative">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-primary-200/30 to-purple-200/30 dark:from-primary-900/20 dark:to-purple-900/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-tl from-blue-200/30 to-purple-200/30 dark:from-blue-900/20 dark:to-purple-900/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-primary-200/30 to-red-200/30 dark:from-primary-900/20 dark:to-red-900/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-tl from-green-200/30 to-red-200/30 dark:from-green-900/20 dark:to-red-900/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -118,7 +118,7 @@ const AppliedJobs = () => {
         <div className="mb-8">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-4xl font-black bg-gradient-to-r from-primary-600 via-purple-600 to-primary-800 bg-clip-text text-transparent mb-2">
+              <h1 className="text-4xl font-black bg-gradient-to-r from-primary-600 via-red-600 to-primary-800 bg-clip-text text-transparent mb-2">
                 My Applied Jobs
               </h1>
               <p className="text-gray-600 dark:text-gray-400">
@@ -161,7 +161,7 @@ const AppliedJobs = () => {
             </p>
             <Link
               to="/jobs"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-xl hover:from-primary-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-600 to-red-600 text-white font-semibold rounded-xl hover:from-primary-700 hover:to-red-700 transition-all duration-300 transform hover:scale-105"
             >
               Browse Jobs
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -225,7 +225,7 @@ const AppliedJobs = () => {
                             job.workType === 'Remote'
                               ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
                               : job.workType === 'Hybrid'
-                              ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300'
+                              ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
                               : 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300'
                           }`}>
                             {job.workType}
@@ -233,7 +233,7 @@ const AppliedJobs = () => {
                           <span className="bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">
                             {job.category}
                           </span>
-                          <span className="bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 px-3 py-1 rounded-full text-sm font-medium">
+                          <span className="bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300 px-3 py-1 rounded-full text-sm font-medium">
                             {job.experienceLevel}
                           </span>
                         </div>
@@ -244,7 +244,7 @@ const AppliedJobs = () => {
                     </div>
                   </div>
                   <div className="lg:ml-8 text-center lg:text-right">
-                    <div className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent mb-4">
+                    <div className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-red-600 bg-clip-text text-transparent mb-4">
                       {formatSalary(job.salaryMin, job.salaryMax)}
                     </div>
                     <div className="flex flex-col sm:flex-row lg:flex-col gap-3">

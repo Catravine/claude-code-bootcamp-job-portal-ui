@@ -29,8 +29,8 @@ const Navbar = () => {
             <div className="flex-shrink-0">
               <Link to="/" className="block">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-purple-600 blur-lg opacity-20 rounded-lg"></div>
-                  <h1 className="relative text-3xl font-black bg-gradient-to-r from-primary-600 via-purple-600 to-primary-800 bg-clip-text text-transparent">
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-red-600 blur-lg opacity-20 rounded-lg"></div>
+                  <h1 className="relative text-3xl font-black bg-gradient-to-r from-primary-600 via-red-600 to-primary-800 bg-clip-text text-transparent">
                     JobPortal
                   </h1>
                 </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 >
                   <span className="relative z-10">Find Jobs</span>
                   <div
-                    className={`absolute inset-0 bg-gradient-to-r from-primary-50 to-purple-50 dark:from-primary-900/20 dark:to-purple-900/20 rounded-xl transition-all duration-300 transform group-hover:scale-105 ${
+                    className={`absolute inset-0 bg-gradient-to-r from-primary-50 to-red-50 dark:from-primary-900/20 dark:to-red-900/20 rounded-xl transition-all duration-300 transform group-hover:scale-105 ${
                       isActive("/jobs")
                         ? "opacity-100"
                         : "opacity-0 group-hover:opacity-100"
@@ -65,7 +65,7 @@ const Navbar = () => {
                 >
                   <span className="relative z-10">Companies</span>
                   <div
-                    className={`absolute inset-0 bg-gradient-to-r from-primary-50 to-purple-50 dark:from-primary-900/20 dark:to-purple-900/20 rounded-xl transition-all duration-300 transform group-hover:scale-105 ${
+                    className={`absolute inset-0 bg-gradient-to-r from-primary-50 to-red-50 dark:from-primary-900/20 dark:to-red-900/20 rounded-xl transition-all duration-300 transform group-hover:scale-105 ${
                       isActive("/companies")
                         ? "opacity-100"
                         : "opacity-0 group-hover:opacity-100"
@@ -83,7 +83,7 @@ const Navbar = () => {
                 className="relative group p-3 rounded-xl text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 transform hover:scale-110"
                 aria-label="Toggle theme"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-50 to-purple-50 dark:from-primary-900/20 dark:to-purple-900/20 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary-50 to-red-50 dark:from-primary-900/20 dark:to-red-900/20 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
                 <div className="relative z-10">
                   {theme === "dark" ? (
                     <svg
@@ -121,9 +121,9 @@ const Navbar = () => {
                 <div className="relative">
                   <button
                     onClick={() => setShowUserMenu(!showUserMenu)}
-                    className="flex items-center space-x-3 px-4 py-2 bg-gradient-to-r from-primary-50 to-purple-50 dark:from-primary-900/20 dark:to-purple-900/20 rounded-xl hover:from-primary-100 hover:to-purple-100 dark:hover:from-primary-800/30 dark:hover:to-purple-800/30 transition-all duration-300"
+                    className="flex items-center space-x-3 px-4 py-2 bg-gradient-to-r from-primary-50 to-red-50 dark:from-primary-900/20 dark:to-red-900/20 rounded-xl hover:from-primary-100 hover:to-red-100 dark:hover:from-primary-800/30 dark:hover:to-red-800/30 transition-all duration-300"
                   >
-                    <div className="w-8 h-8 bg-gradient-to-r from-primary-600 to-purple-600 rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 bg-gradient-to-r from-primary-600 to-red-600 rounded-full flex items-center justify-center">
                       <span className="text-white font-semibold text-sm">
                         {user.name?.charAt(0).toUpperCase()}
                       </span>
@@ -165,8 +165,8 @@ const Navbar = () => {
                             isAdmin
                               ? "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
                               : isEmployer
-                              ? "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200"
-                              : "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
+                              ? "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
+                              : "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
                           }`}
                         >
                           {isAdmin ? "Admin" : isEmployer ? "Employer" : "Job Seeker"}
@@ -217,7 +217,7 @@ const Navbar = () => {
                               Applied Jobs
                             </span>
                             {totalAppliedJobs > 0 && (
-                              <span className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-xs px-2 py-0.5 rounded-full">
+                              <span className="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 text-xs px-2 py-0.5 rounded-full">
                                 {totalAppliedJobs}
                               </span>
                             )}
@@ -296,7 +296,7 @@ const Navbar = () => {
                               My Job Postings
                             </span>
                             {totalPostedJobs > 0 && (
-                              <span className="bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200 text-xs px-2 py-0.5 rounded-full">
+                              <span className="bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200 text-xs px-2 py-0.5 rounded-full">
                                 {totalPostedJobs}
                               </span>
                             )}
@@ -385,11 +385,11 @@ const Navbar = () => {
                     className="relative group px-5 py-2.5 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 rounded-xl"
                   >
                     <span className="relative z-10">Log In</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary-50 to-purple-50 dark:from-primary-900/20 dark:to-purple-900/20 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary-50 to-red-50 dark:from-primary-900/20 dark:to-red-900/20 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
                   </Link>
                   <Link
                     to="/register"
-                    className="relative group overflow-hidden bg-gradient-to-r from-primary-600 via-primary-700 to-purple-700 hover:from-primary-700 hover:via-primary-800 hover:to-purple-800 text-white px-7 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary-500/25"
+                    className="relative group overflow-hidden bg-gradient-to-r from-primary-600 via-primary-700 to-red-700 hover:from-primary-700 hover:via-primary-800 hover:to-red-800 text-white px-7 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary-500/25"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <span className="relative z-10">Sign Up</span>
@@ -441,8 +441,8 @@ const Navbar = () => {
 
               {isAuthenticated ? (
                 <div className="px-3 py-2">
-                  <div className="flex items-center space-x-3 p-3 bg-gradient-to-r from-primary-50 to-purple-50 dark:from-primary-900/20 dark:to-purple-900/20 rounded-lg">
-                    <div className="w-10 h-10 bg-gradient-to-r from-primary-600 to-purple-600 rounded-full flex items-center justify-center">
+                  <div className="flex items-center space-x-3 p-3 bg-gradient-to-r from-primary-50 to-red-50 dark:from-primary-900/20 dark:to-red-900/20 rounded-lg">
+                    <div className="w-10 h-10 bg-gradient-to-r from-primary-600 to-red-600 rounded-full flex items-center justify-center">
                       <span className="text-white font-semibold">
                         {user.name?.charAt(0).toUpperCase()}
                       </span>

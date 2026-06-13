@@ -5,16 +5,16 @@ const Footer = () => {
     <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-1/3 w-96 h-96 bg-gradient-to-br from-primary-600/10 to-purple-600/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/3 w-80 h-80 bg-gradient-to-tl from-blue-600/10 to-purple-600/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-1/3 w-96 h-96 bg-gradient-to-br from-primary-600/10 to-red-600/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/3 w-80 h-80 bg-gradient-to-tl from-green-600/10 to-red-600/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
             <div className="relative mb-6">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-purple-600 blur-lg opacity-20 rounded-lg"></div>
-              <h3 className="relative text-4xl font-black bg-gradient-to-r from-primary-400 via-purple-400 to-primary-600 bg-clip-text text-transparent">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-red-600 blur-lg opacity-20 rounded-lg"></div>
+              <h3 className="relative text-4xl font-black bg-gradient-to-r from-primary-400 via-red-400 to-primary-600 bg-clip-text text-transparent">
                 JobPortal
               </h3>
             </div>
@@ -28,7 +28,7 @@ const Footer = () => {
                 href="https://twitter.com/jobportal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-3 bg-gray-800/50 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-700 rounded-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
+                className="group p-3 bg-gray-800/50 hover:bg-gradient-to-r hover:from-green-600 hover:to-green-700 rounded-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
               >
                 <svg
                   className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"
@@ -42,7 +42,7 @@ const Footer = () => {
                 href="https://linkedin.com/company/jobportal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-3 bg-gray-800/50 hover:bg-gradient-to-r hover:from-blue-700 hover:to-blue-800 rounded-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
+                className="group p-3 bg-gray-800/50 hover:bg-gradient-to-r hover:from-green-700 hover:to-green-800 rounded-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
               >
                 <svg
                   className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"
@@ -70,7 +70,7 @@ const Footer = () => {
                 href="https://instagram.com/jobportal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-3 bg-gray-800/50 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 rounded-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
+                className="group p-3 bg-gray-800/50 hover:bg-gradient-to-r hover:from-red-600 hover:to-pink-600 rounded-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
               >
                 <svg
                   className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold bg-gradient-to-r from-primary-400 to-purple-400 bg-clip-text text-transparent mb-6">
+            <h4 className="text-xl font-bold bg-gradient-to-r from-primary-400 to-red-400 bg-clip-text text-transparent mb-6">
               For Job Seekers
             </h4>
             <ul className="space-y-3">
@@ -110,7 +110,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-6">
+            <h4 className="text-xl font-bold bg-gradient-to-r from-red-400 to-green-400 bg-clip-text text-transparent mb-6">
               For Employers
             </h4>
             <ul className="space-y-3">
@@ -119,7 +119,7 @@ const Footer = () => {
                   to="/login"
                   className="group flex items-center text-gray-300 hover:text-white transition-all duration-300"
                 >
-                  <span className="w-2 h-2 bg-purple-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="w-2 h-2 bg-red-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   Post a Job
                 </Link>
               </li>
@@ -128,7 +128,7 @@ const Footer = () => {
                   to="/login"
                   className="group flex items-center text-gray-300 hover:text-white transition-all duration-300"
                 >
-                  <span className="w-2 h-2 bg-purple-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="w-2 h-2 bg-red-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   Browse Candidates
                 </Link>
               </li>
@@ -143,7 +143,7 @@ const Footer = () => {
             <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm text-gray-400 mb-6 md:mb-0">
               <a href="#" className="group relative hover:text-white transition-colors duration-300">
                 <span className="relative z-10">Privacy Policy</span>
-                <div className="absolute -inset-2 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary-600/20 to-red-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-full left-0 mb-3 w-64 max-w-[calc(100vw-2rem)] px-4 py-3 rounded-lg bg-gray-800 text-gray-100 text-xs leading-relaxed shadow-xl ring-1 ring-gray-700/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 pointer-events-none">
                   nyah nyah, we do what we want, you're being doxxed right now fool!
                   <span className="absolute top-full left-6 -translate-x-1/2 border-4 border-transparent border-t-gray-800"></span>
@@ -151,7 +151,7 @@ const Footer = () => {
               </a>
               <a href="#" className="group relative hover:text-white transition-colors duration-300">
                 <span className="relative z-10">Terms of Service</span>
-                <div className="absolute -inset-2 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary-600/20 to-red-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div
                   role="tooltip"
                   className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-3 w-56 -translate-x-1/2 rounded-lg bg-gray-900 px-3 py-2 text-xs text-gray-100 shadow-xl ring-1 ring-white/10 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300"
@@ -163,14 +163,14 @@ const Footer = () => {
               </a>
               <a href="#" className="group relative hover:text-white transition-colors duration-300">
                 <span className="relative z-10">Cookie Policy</span>
-                <div className="absolute -inset-2 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary-600/20 to-red-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <Link
                 to="/contact"
                 className="group relative hover:text-white transition-colors duration-300"
               >
                 <span className="relative z-10">Contact Us</span>
-                <div className="absolute -inset-2 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary-600/20 to-red-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div
                   role="tooltip"
                   className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-3 w-64 -translate-x-1/2 rounded-lg bg-gray-900 px-3 py-2 text-xs text-gray-100 shadow-xl ring-1 ring-white/10 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300"
