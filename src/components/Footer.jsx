@@ -171,6 +171,13 @@ const Footer = () => {
               >
                 <span className="relative z-10">Contact Us</span>
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div
+                  role="tooltip"
+                  className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-3 w-64 -translate-x-1/2 rounded-lg bg-gray-900 px-3 py-2 text-xs text-gray-100 shadow-xl ring-1 ring-white/10 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300"
+                >
+                  Come here to complain, if you&apos;re lucky we&apos;ll fix it. its cool i guess just don&apos;t hold your breath
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900"></span>
+                </div>
               </Link>
             </div>
             <div className="text-center md:text-right">
