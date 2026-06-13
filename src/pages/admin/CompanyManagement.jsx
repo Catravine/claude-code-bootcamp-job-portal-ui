@@ -167,7 +167,7 @@ const CompanyManagement = () => {
           <button
             onClick={handleAddNew}
             disabled={isAddingNew || editingCompanyId !== null}
-            className="bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg shadow-primary-500/25 hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+            className="bg-gradient-to-r from-primary-600 to-red-600 hover:from-primary-700 hover:to-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg shadow-primary-500/25 hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
           >
             + Add New Company
           </button>
@@ -222,7 +222,7 @@ const CompanyManagement = () => {
                 <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
                   {/* Add New Company Row */}
                   {isAddingNew && (
-                    <tr className="bg-blue-50 dark:bg-blue-900/20">
+                    <tr className="bg-green-50 dark:bg-green-900/20">
                       <td colSpan="7" className="px-6 py-4">
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Add New Company</h3>
                         <form onSubmit={(e) => handleSubmit(e, null)} className="space-y-4">
@@ -361,7 +361,7 @@ const CompanyManagement = () => {
                             <button
                               type="submit"
                               disabled={isSaving}
-                              className="bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 shadow-sm disabled:opacity-50"
+                              className="bg-gradient-to-r from-primary-600 to-red-600 hover:from-primary-700 hover:to-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 shadow-sm disabled:opacity-50"
                             >
                               {isSaving ? 'Saving...' : 'Save'}
                             </button>
@@ -438,7 +438,7 @@ const CompanyManagement = () => {
                               <button
                                 onClick={() => handleEdit(company)}
                                 disabled={editingCompanyId !== null || isAddingNew}
-                                className="bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 text-white px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 shadow-sm shadow-primary-500/25 hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+                                className="bg-gradient-to-r from-primary-600 to-red-600 hover:from-primary-700 hover:to-red-700 text-white px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300 shadow-sm shadow-primary-500/25 hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
                               >
                                 Edit
                               </button>
@@ -454,7 +454,7 @@ const CompanyManagement = () => {
                         </tr>
                         {/* Edit Mode Form */}
                         {editingCompanyId === company.id && (
-                          <tr className="bg-blue-50 dark:bg-blue-900/20">
+                          <tr className="bg-green-50 dark:bg-green-900/20">
                             <td colSpan="7" className="px-6 py-4">
                               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Edit Company</h3>
                               <form onSubmit={(e) => handleSubmit(e, company.id)} className="space-y-4">
@@ -503,7 +503,7 @@ const CompanyManagement = () => {
                                   <textarea rows={2} value={formData.description} onChange={(e) => setFormData({ ...formData, description: e.target.value })} className="w-full px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white" placeholder="Company description" />
                                 </div>
                                 <div className="flex gap-2 justify-end">
-                                  <button type="submit" disabled={isSaving} className="bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 shadow-sm disabled:opacity-50">
+                                  <button type="submit" disabled={isSaving} className="bg-gradient-to-r from-primary-600 to-red-600 hover:from-primary-700 hover:to-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 shadow-sm disabled:opacity-50">
                                     {isSaving ? 'Saving...' : 'Update'}
                                   </button>
                                   <button type="button" onClick={handleCancel} className="border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg text-sm font-semibold hover:border-gray-400 transition-all duration-300">

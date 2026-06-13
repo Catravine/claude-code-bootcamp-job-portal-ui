@@ -130,16 +130,16 @@ const Companies = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 pt-20">
       {/* Header */}
-      <div className="relative bg-gradient-to-br from-primary-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-purple-950/20 dark:to-blue-950/20 py-16">
+      <div className="relative bg-gradient-to-br from-primary-50 via-red-50 to-green-50 dark:from-gray-900 dark:via-red-950/20 dark:to-green-950/20 py-16">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400 to-purple-600 rounded-full opacity-10 blur-3xl"></div>
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-400 to-purple-600 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400 to-red-600 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-green-400 to-red-600 rounded-full opacity-10 blur-3xl"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-black text-gray-900 dark:text-white mb-6">
-              <span className="bg-gradient-to-r from-gray-900 via-primary-600 to-purple-600 dark:from-white dark:via-primary-400 dark:to-purple-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-900 via-primary-600 to-red-600 dark:from-white dark:via-primary-400 dark:to-red-400 bg-clip-text text-transparent">
                 Top Companies
               </span>
             </h1>
@@ -281,7 +281,7 @@ const Companies = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 rounded-xl flex items-center justify-center text-2xl font-bold text-primary-600 dark:text-primary-400 hidden">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary-100 to-red-100 dark:from-primary-900/30 dark:to-red-900/30 rounded-xl flex items-center justify-center text-2xl font-bold text-primary-600 dark:text-primary-400 hidden">
                     {company.name.charAt(0)}
                   </div>
                 </div>

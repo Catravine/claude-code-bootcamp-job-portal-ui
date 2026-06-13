@@ -21,9 +21,9 @@ const Dashboard = () => {
         </svg>
       ),
       link: '/admin/companies',
-      color: 'from-blue-500 to-blue-600',
-      bgColor: 'bg-blue-50 dark:bg-blue-900/20',
-      textColor: 'text-blue-600 dark:text-blue-400',
+      color: 'from-green-500 to-green-600',
+      bgColor: 'bg-green-50 dark:bg-green-900/20',
+      textColor: 'text-green-600 dark:text-green-400',
       count: companies.length,
       countLabel: 'Total Companies'
     },
@@ -41,9 +41,9 @@ const Dashboard = () => {
         </svg>
       ),
       link: '/admin/employers',
-      color: 'from-purple-500 to-purple-600',
-      bgColor: 'bg-purple-50 dark:bg-purple-900/20',
-      textColor: 'text-purple-600 dark:text-purple-400'
+      color: 'from-red-500 to-red-600',
+      bgColor: 'bg-red-50 dark:bg-red-900/20',
+      textColor: 'text-red-600 dark:text-red-400'
     },
     {
       title: 'Contact Messages',
@@ -122,18 +122,18 @@ const Dashboard = () => {
         </div>
 
         {/* Quick Info */}
-        <div className="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6">
+        <div className="mt-8 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6">
           <div className="flex items-start">
             <div className="flex-shrink-0">
-              <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <div className="ml-3">
-              <h3 className="text-sm font-semibold text-blue-900 dark:text-blue-200">
+              <h3 className="text-sm font-semibold text-green-900 dark:text-green-200">
                 Admin Privileges
               </h3>
-              <p className="mt-1 text-sm text-blue-700 dark:text-blue-300">
+              <p className="mt-1 text-sm text-green-700 dark:text-green-300">
                 As an administrator, you have full access to manage companies, employers, and view all contact messages. Use these tools responsibly to maintain the platform.
               </p>
             </div>

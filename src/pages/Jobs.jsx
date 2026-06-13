@@ -200,16 +200,16 @@ const Jobs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 pt-20">
       {/* Header */}
-      <div className="relative bg-gradient-to-br from-primary-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-purple-950/20 dark:to-blue-950/20 py-16">
+      <div className="relative bg-gradient-to-br from-primary-50 via-red-50 to-green-50 dark:from-gray-900 dark:via-red-950/20 dark:to-green-950/20 py-16">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400 to-purple-600 rounded-full opacity-10 blur-3xl"></div>
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-400 to-purple-600 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400 to-red-600 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-green-400 to-red-600 rounded-full opacity-10 blur-3xl"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-black text-gray-900 dark:text-white mb-6">
-              <span className="bg-gradient-to-r from-gray-900 via-primary-600 to-purple-600 dark:from-white dark:via-primary-400 dark:to-purple-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-900 via-primary-600 to-red-600 dark:from-white dark:via-primary-400 dark:to-red-400 bg-clip-text text-transparent">
                 Find Your Perfect Job
               </span>
             </h1>
@@ -426,7 +426,7 @@ const Jobs = () => {
                           job.workType === 'Remote' 
                             ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
                             : job.workType === 'Hybrid'
-                            ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300'
+                            ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
                             : 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300'
                         }`}>
                           {job.workType}
@@ -434,7 +434,7 @@ const Jobs = () => {
                         <span className="bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-300 px-3 py-1 rounded-full text-xs font-semibold">
                           {job.category}
                         </span>
-                        <span className="bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-semibold">
+                        <span className="bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300 px-3 py-1 rounded-full text-xs font-semibold">
                           {job.experienceLevel}
                         </span>
                         {job.featured && (
@@ -453,7 +453,7 @@ const Jobs = () => {
                 </div>
 
                 <div className="lg:text-right lg:ml-8">
-                  <div className="text-2xl font-black bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent mb-2">
+                  <div className="text-2xl font-black bg-gradient-to-r from-primary-600 to-red-600 bg-clip-text text-transparent mb-2">
                     {formatSalary(job.salary.min, job.salary.max)}
                   </div>
                   <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
@@ -490,7 +490,7 @@ const Jobs = () => {
                             className={`px-4 py-2 rounded-xl font-semibold transition-colors text-sm ${
                               (isAuthenticated && isJobSeeker && !user?.profileComplete)
                                 ? 'bg-gray-200 text-gray-600 dark:bg-gray-700 dark:text-gray-400 cursor-not-allowed'
-                                : 'bg-gradient-to-r from-primary-600 to-purple-600 text-white hover:from-primary-700 hover:to-purple-700'
+                                : 'bg-gradient-to-r from-primary-600 to-red-600 text-white hover:from-primary-700 hover:to-red-700'
                             }`}
                           >
                             {!isAuthenticated

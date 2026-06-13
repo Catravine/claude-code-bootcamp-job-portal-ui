@@ -374,14 +374,14 @@ const Profile = () => {
     <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-gray-50 via-white to-primary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-12 relative">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-purple-200/30 to-primary-200/30 dark:from-purple-900/20 dark:to-primary-900/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-tl from-blue-200/30 to-purple-200/30 dark:from-blue-900/20 dark:to-purple-900/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-red-200/30 to-primary-200/30 dark:from-red-900/20 dark:to-primary-900/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-tl from-green-200/30 to-red-200/30 dark:from-green-900/20 dark:to-red-900/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-black bg-gradient-to-r from-primary-600 via-purple-600 to-primary-800 bg-clip-text text-transparent mb-4">
+          <h1 className="text-4xl font-black bg-gradient-to-r from-primary-600 via-red-600 to-primary-800 bg-clip-text text-transparent mb-4">
             My Profile
           </h1>
           <p className="text-gray-600 dark:text-gray-400 mb-6">Complete your profile to start applying for jobs</p>
@@ -394,7 +394,7 @@ const Profile = () => {
             </div>
             <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
               <div
-                className="bg-gradient-to-r from-primary-600 to-purple-600 h-2 rounded-full transition-all duration-500"
+                className="bg-gradient-to-r from-primary-600 to-red-600 h-2 rounded-full transition-all duration-500"
                 style={{ width: `${completeness}%` }}
               ></div>
             </div>
@@ -454,7 +454,7 @@ const Profile = () => {
                       {formData.profileImage ? (
                         <img src={formData.profileImage} alt="Profile" className="w-full h-full object-cover" />
                       ) : (
-                        <div className="w-full h-full bg-gradient-to-br from-primary-600 to-purple-600 flex items-center justify-center">
+                        <div className="w-full h-full bg-gradient-to-br from-primary-600 to-red-600 flex items-center justify-center">
                           <span className="text-white font-bold text-4xl">
                             {formData.name?.charAt(0).toUpperCase() || '?'}
                           </span>
@@ -726,7 +726,7 @@ const Profile = () => {
                 className={`px-12 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 ${
                   isLoading
                     ? 'bg-gray-400 dark:bg-gray-600 text-gray-600 dark:text-gray-400 cursor-not-allowed'
-                    : 'bg-gradient-to-r from-primary-600 via-primary-700 to-purple-700 hover:from-primary-700 hover:via-primary-800 hover:to-purple-800 text-white shadow-lg shadow-primary-500/25'
+                    : 'bg-gradient-to-r from-primary-600 via-primary-700 to-red-700 hover:from-primary-700 hover:via-primary-800 hover:to-red-800 text-white shadow-lg shadow-primary-500/25'
                 }`}
               >
                 {isLoading ? 'Updating...' : 'Update Profile'}

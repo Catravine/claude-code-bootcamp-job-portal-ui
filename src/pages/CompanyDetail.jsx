@@ -110,10 +110,10 @@ const CompanyDetail = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 pt-20">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-primary-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-purple-950/20 dark:to-blue-950/20 py-16">
+      <div className="relative bg-gradient-to-br from-primary-50 via-red-50 to-green-50 dark:from-gray-900 dark:via-red-950/20 dark:to-green-950/20 py-16">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400 to-purple-600 rounded-full opacity-10 blur-3xl"></div>
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-400 to-purple-600 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400 to-red-600 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-green-400 to-red-600 rounded-full opacity-10 blur-3xl"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -177,7 +177,7 @@ const CompanyDetail = () => {
                       <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 px-4 py-2 rounded-full text-sm font-semibold">
                         {companyJobs.length} Open Positions
                       </span>
-                      <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-semibold">
+                      <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 px-4 py-2 rounded-full text-sm font-semibold">
                         {company.locations.length} Locations
                       </span>
                     </div>
@@ -189,7 +189,7 @@ const CompanyDetail = () => {
                 <div className="space-y-4">
                   <Link
                     to={`/jobs?company=${encodeURIComponent(company.name)}`}
-                    className="block px-8 py-4 bg-gradient-to-r from-primary-600 via-primary-700 to-purple-700 hover:from-primary-700 hover:via-primary-800 hover:to-purple-800 text-white rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary-500/25"
+                    className="block px-8 py-4 bg-gradient-to-r from-primary-600 via-primary-700 to-red-700 hover:from-primary-700 hover:via-primary-800 hover:to-red-800 text-white rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary-500/25"
                   >
                     View All Jobs
                   </Link>
@@ -323,7 +323,7 @@ const CompanyDetail = () => {
                                 job.workType === 'Remote' 
                                   ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
                                   : job.workType === 'Hybrid'
-                                  ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300'
+                                  ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
                                   : 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300'
                               }`}>
                                 {job.workType}
@@ -498,7 +498,7 @@ const CompanyDetail = () => {
                     href={company.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full p-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors font-semibold text-center"
+                    className="block w-full p-3 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-colors font-semibold text-center"
                   >
                     Visit Website
                   </a>

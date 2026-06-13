@@ -171,7 +171,7 @@ const MyJobs = () => {
         {companyInfo && (
           <div className="mb-6">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
                 {companyInfo.logo ? (
                   <img
                     src={companyInfo.logo}
@@ -238,7 +238,7 @@ const MyJobs = () => {
               </p>
               <Link
                 to="/employer/post-job"
-                className="inline-block bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg"
+                className="inline-block bg-gradient-to-r from-primary-600 to-red-600 hover:from-primary-700 hover:to-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg"
               >
                 Post a Job
               </Link>
@@ -249,7 +249,7 @@ const MyJobs = () => {
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
-                <thead className="bg-gradient-to-r from-primary-600 to-purple-600 text-white">
+                <thead className="bg-gradient-to-r from-primary-600 to-red-600 text-white">
                   <tr>
                     <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider">
                       Job Title
@@ -305,10 +305,10 @@ const MyJobs = () => {
                       {/* Type */}
                       <td className="px-6 py-4">
                         <div className="flex flex-col gap-1">
-                          <span className="px-2 py-0.5 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs rounded font-medium w-fit">
+                          <span className="px-2 py-0.5 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 text-xs rounded font-medium w-fit">
                             {job.workType}
                           </span>
-                          <span className="px-2 py-0.5 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-xs rounded font-medium w-fit">
+                          <span className="px-2 py-0.5 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 text-xs rounded font-medium w-fit">
                             {job.experienceLevel}
                           </span>
                         </div>

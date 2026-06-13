@@ -55,7 +55,7 @@ const ConfirmationModal = ({
           icon: 'ℹ️',
           iconBg: 'bg-primary-100 dark:bg-primary-900/30',
           iconColor: 'text-primary-600 dark:text-primary-400',
-          confirmBtn: 'bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700'
+          confirmBtn: 'bg-gradient-to-r from-primary-600 to-red-600 hover:from-primary-700 hover:to-red-700'
         };
     }
   };

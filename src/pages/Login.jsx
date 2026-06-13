@@ -87,8 +87,8 @@ const Login = () => {
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-primary-200/30 to-purple-200/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-tl from-blue-200/30 to-purple-200/30 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-primary-200/30 to-red-200/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-tl from-green-200/30 to-red-200/30 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 w-full max-w-md">
@@ -102,7 +102,7 @@ const Login = () => {
           {/* Header */}
           <div className="text-center mb-8">
             <div className="relative mb-4">
-              <h1 className="text-4xl font-black bg-gradient-to-r from-primary-600 via-purple-600 to-primary-800 bg-clip-text text-transparent">
+              <h1 className="text-4xl font-black bg-gradient-to-r from-primary-600 via-red-600 to-primary-800 bg-clip-text text-transparent">
                 Welcome Back
               </h1>
             </div>
@@ -122,8 +122,8 @@ const Login = () => {
               onClick={() => setShowDemoCredentials(!showDemoCredentials)}
               className={`w-full p-3 ${
                 theme === "dark"
-                  ? "bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-700 text-blue-300 hover:from-blue-800/30 hover:to-purple-800/30"
-                  : "bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 text-blue-700 hover:from-blue-100 hover:to-purple-100"
+                  ? "bg-gradient-to-r from-green-900/30 to-red-900/30 border border-green-700 text-green-300 hover:from-green-800/30 hover:to-red-800/30"
+                  : "bg-gradient-to-r from-green-50 to-red-50 border border-green-200 text-green-700 hover:from-green-100 hover:to-red-100"
               } rounded-xl transition-all duration-300 text-sm font-medium`}
             >
               {showDemoCredentials ? "Hide" : "Show"} Demo Credentials
@@ -133,8 +133,8 @@ const Login = () => {
               <div
                 className={`mt-4 p-4 ${
                   theme === "dark"
-                    ? "bg-gradient-to-r from-gray-800 to-blue-900/30 border border-gray-700"
-                    : "bg-gradient-to-r from-gray-50 to-blue-50 border border-gray-200"
+                    ? "bg-gradient-to-r from-gray-800 to-green-900/30 border border-gray-700"
+                    : "bg-gradient-to-r from-gray-50 to-green-50 border border-gray-200"
                 } rounded-xl`}
               >
                 <p
@@ -154,7 +154,7 @@ const Login = () => {
                         : "bg-white border border-gray-200 hover:bg-gray-50"
                     } rounded-lg transition-colors text-sm`}
                   >
-                    <div className="font-medium text-purple-700">Employer</div>
+                    <div className="font-medium text-red-700">Employer</div>
                     <div className="text-gray-500">
                       employer@company.com / employer123
                     </div>
@@ -168,7 +168,7 @@ const Login = () => {
                         : "bg-white border border-gray-200 hover:bg-gray-50"
                     } rounded-lg transition-colors text-sm`}
                   >
-                    <div className="font-medium text-blue-700">Job Seeker</div>
+                    <div className="font-medium text-green-700">Job Seeker</div>
                     <div className="text-gray-500">
                       jobseeker@email.com / jobseeker123
                     </div>
@@ -182,7 +182,7 @@ const Login = () => {
                         : "bg-white border border-gray-200 hover:bg-gray-50"
                     } rounded-lg transition-colors text-sm`}
                   >
-                    <div className="font-medium text-blue-700">Admin</div>
+                    <div className="font-medium text-green-700">Admin</div>
                     <div className="text-gray-500">
                       admin@portal.com / admin123
                     </div>
@@ -331,7 +331,7 @@ const Login = () => {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold py-3 px-4 rounded-xl hover:from-primary-700 hover:to-purple-700 focus:ring-4 focus:ring-primary-300 transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="w-full bg-gradient-to-r from-primary-600 to-red-600 text-white font-semibold py-3 px-4 rounded-xl hover:from-primary-700 hover:to-red-700 focus:ring-4 focus:ring-primary-300 transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {isLoading ? (
                 <div className="flex items-center justify-center space-x-2">

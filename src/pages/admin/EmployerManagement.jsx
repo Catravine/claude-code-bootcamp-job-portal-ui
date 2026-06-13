@@ -178,7 +178,7 @@ const EmployerManagement = () => {
               <button
                 type="submit"
                 disabled={isSearching}
-                className="bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-gradient-to-r from-primary-600 to-red-600 hover:from-primary-700 hover:to-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSearching ? 'Searching...' : 'Search User'}
               </button>
@@ -225,8 +225,8 @@ const EmployerManagement = () => {
                       searchedUser.role === 'ROLE_EMPLOYER'
                         ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
                         : searchedUser.role === 'ROLE_ADMIN'
-                        ? 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200'
-                        : 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200'
+                        ? 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
+                        : 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
                     }`}>
                       {searchedUser.role}
                     </span>
@@ -275,7 +275,7 @@ const EmployerManagement = () => {
                         <button
                           onClick={handleAssignCompany}
                           disabled={!selectedCompanyId || isAssigning}
-                          className="bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                          className="bg-gradient-to-r from-primary-600 to-red-600 hover:from-primary-700 hover:to-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                           {isAssigning ? 'Assigning...' : 'Assign'}
                         </button>
