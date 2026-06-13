@@ -144,6 +144,10 @@ const Footer = () => {
               <a href="#" className="group relative hover:text-white transition-colors duration-300">
                 <span className="relative z-10">Privacy Policy</span>
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-full left-0 mb-3 w-64 max-w-[calc(100vw-2rem)] px-4 py-3 rounded-lg bg-gray-800 text-gray-100 text-xs leading-relaxed shadow-xl ring-1 ring-gray-700/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 pointer-events-none">
+                  nyah nyah, we do what we want, you're being doxxed right now fool!
+                  <span className="absolute top-full left-6 -translate-x-1/2 border-4 border-transparent border-t-gray-800"></span>
+                </div>
               </a>
               <a href="#" className="group relative hover:text-white transition-colors duration-300">
                 <span className="relative z-10">Terms of Service</span>
